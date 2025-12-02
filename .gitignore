@@ -34,9 +34,8 @@ wheels/
 *.swo
 *~
 
-# Reportes (excepto el último)
-reports/screenshots/*.png
-reports/html/*.html
+# Reportes - Mantener para demostración
+# reports/ directorio completo se incluye ahora
 
 # OS
 .DS_Store
@@ -48,3 +47,13 @@ Thumbs.db
 # Credenciales
 .env
 credentials.json
+
+# Archivos de guía y temporales
+HISTORIAS_USUARIO_PLANTILLAS.md
+GIT_COMMANDS.txt
+VERIFICACION_CUMPLIMIENTO.md
+FAST_TRACK_ENTREGA.md
+GUIA_EJECUCION.md
+Descripción_de_proyecto.txt
+debug_driver.py
+error_log.txt
