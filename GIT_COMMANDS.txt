@@ -1,0 +1,19 @@
+# Comandos para subir al repositorio de GitHub
+
+# 1. Inicializar git si no está inicializado
+git init
+
+# 2. Agregar el remoto (ya lo tienes creado)
+git remote add origin https://github.com/Davidcx8/selenium-automation-project.git
+
+# 3. Agregar todos los archivos (respeta .gitignore automáticamente)
+git add .
+
+# 4. Hacer commit
+git commit -m "Initial commit: Selenium automation project with Page Object Model"
+
+# 5. Subir a GitHub
+git push -u origin main
+
+# Nota: Si te pide credenciales, usa tu usuario y token de GitHub
+# Si el branch es 'master' en vez de 'main', usa: git push -u origin master

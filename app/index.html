@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-brand">
+                📊 Sistema de Gestión
+            </div>
+            <div class="navbar-user">
+                <div class="user-info">
+                    Bienvenido, <span class="user-name" id="current-user">Usuario</span>
+                </div>
+                <button id="btn-logout" class="btn btn-secondary btn-sm">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-card">
+            <div class="card-header">
+                <h2 class="card-title">Gestión de Registros</h2>
+                <button id="btn-new-record" class="btn btn-primary">
+                    ➕ Nuevo Registro
+                </button>
+            </div>
+
+            <div id="alert-container" class="alert">
+                <span id="alert-message"></span>
+            </div>
+
+            <div class="table-container">
+                <table id="records-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Los registros se cargan dinámicamente -->
+                    </tbody>
+                </table>
+
+                <div id="empty-state" class="empty-state hidden">
+                    <div class="empty-state-icon">📭</div>
+                    <div class="empty-state-text">No hay registros disponibles</div>
+                    <p style="color: var(--text-secondary); font-size: 14px;">
+                        Haz clic en "Nuevo Registro" para comenzar
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-2" style="color: var(--text-secondary); font-size: 14px;">
+                <strong>Total de registros:</strong> <span id="total-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Crear/Editar -->
+    <div id="record-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Nuevo Registro</h3>
+            </div>
+
+            <form id="record-form">
+                <input type="hidden" id="record-id">
+
+                <div class="form-group">
+                    <label for="record-name" class="form-label">Nombre *</label>
+                    <input type="text" id="record-name" name="name" class="form-input"
+                        placeholder="Ingresa el nombre del registro" maxlength="100" required>
+                    <small style="color: var(--text-secondary); font-size: 12px;">
+                        Máximo 100 caracteres
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="record-description" class="form-label">Descripción</label>
+                    <textarea id="record-description" name="description" class="form-input"
+                        placeholder="Ingresa una descripción" rows="3" maxlength="500"></textarea>
+                    <small style="color: var(--text-secondary); font-size: 12px;">
+                        Máximo 500 caracteres
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="record-category" class="form-label">Categoría</label>
+                    <select id="record-category" name="category" class="form-input">
+                        <option value="">Seleccionar categoría</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Estudio">Estudio</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="record-date" class="form-label">Fecha</label>
+                    <input type="date" id="record-date" name="date" class="form-input">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="btn-cancel" class="btn btn-secondary">
+                        Cancelar
+                    </button>
+                    <button type="submit" id="btn-save" class="btn btn-success">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación para Eliminar -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirmar Eliminación</h3>
+            </div>
+
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                ¿Está seguro que desea eliminar este registro? Esta acción no se puede deshacer.
+            </p>
+
+            <div class="modal-footer">
+                <button type="button" id="btn-cancel-delete" class="btn btn-secondary">
+                    Cancelar
+                </button>
+                <button type="button" id="btn-confirm-delete" class="btn btn-danger">
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
