@@ -2,7 +2,9 @@
 
 **Tarea 4: Pruebas Automatizadas con Selenium**  
 **Instituto Tecnológico de Las Américas (ITLA)**  
-**Programación - Área 4**
+**Programación 3**  
+**Estudiante**: Jose David Castillo  
+**Matrícula**: 20241546
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.15-green.svg)](https://www.selenium.dev/)
@@ -15,7 +17,7 @@ Este proyecto implementa un sistema completo de pruebas automatizadas usando **S
 ### Características Principales
 
 ✅ **5 Historias de Usuario** completamente implementadas  
-✅ **15+ Casos de Prueba** automatizados  
+✅ **26 Casos de Prueba** automatizados  
 ✅ **Pruebas de Camino Feliz, Negativas y de Límites**  
 ✅ **Reportes HTML** con capturas de pantalla automáticas  
 ✅ **Page Object Model** para código mantenible  
@@ -61,9 +63,7 @@ Automatizacion_web/
 ├── requirements.txt                        # Dependencias Python
 ├── pytest.ini                             # Configuración pytest
 ├── .gitignore                             # Exclusiones Git
-├── README.md                              # Este archivo
-├── GUIA_EJECUCION.md                      # Guía paso a paso
-└── HISTORIAS_USUARIO_PLANTILLAS.md       # Plantillas para Jira
+└── README.md                              # Este archivo
 ```
 
 ---
@@ -92,8 +92,8 @@ Automatizacion_web/
 ### Paso 1: Clonar o Descargar el Proyecto
 
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
-cd Automatizacion_web
+git clone https://github.com/Davidcx8/selenium-automation-project.git
+cd selenium-automation-project
 ```
 
 ### Paso 2: Crear Entorno Virtual (Recomendado)
@@ -260,8 +260,7 @@ Los reportes incluyen:
 
 ## 📚 Documentación Adicional
 
-- **[GUIA_EJECUCION.md](GUIA_EJECUCION.md)** - Guía paso a paso completa
-- **[HISTORIAS_USUARIO_PLANTILLAS.md](HISTORIAS_USUARIO_PLANTILLAS.md)** - Plantillas para Jira
+Este README contiene toda la información necesaria para ejecutar y entender el proyecto. Las historias de usuario están documentadas en Jira.
 
 ---
 
@@ -270,8 +269,11 @@ Los reportes incluyen:
 ### Entregables
 
 - **Repositorio GitHub**: https://github.com/Davidcx8/selenium-automation-project
-- **Tablero Jira**: [Configurar según instrucciones]
-- **Video Demostrativo**: [Subir a YouTube]
+- **Tablero Jira**: https://josedavid.atlassian.net/jira/software/projects/SAT/boards/2/backlog
+- **Videos Demostrativos YouTube**:
+  - Parte 1 (Instalación y configuración): https://youtu.be/_7KEweSvsAA
+  - Parte 2 (Ejecución de pruebas): https://youtu.be/N-PWXoN5bT0
+  - Parte 3 (Reporte y resultados): https://youtu.be/kIWkV8BJs-Y
 
 ### Permisos Otorgados
 
@@ -330,9 +332,9 @@ Asegúrate de que las rutas en `conftest.py` apuntan correctamente a la carpeta 
 
 ## 👨‍💻 Autor
 
-**[Tu Nombre]**  
-**Matrícula**: [Tu Matrícula]  
-**Curso**: Programación - Área 4  
+**Jose David Castillo**  
+**Matrícula**: 20241546  
+**Curso**: Programación 3  
 **Instituto**: ITLA
 
 ---
