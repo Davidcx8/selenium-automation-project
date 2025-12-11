@@ -3,7 +3,7 @@ crud_page.py - Page Object para la página principal del CRUD
 """
 
 from selenium.webdriver.common.by import By
-from tests.pages.base_page import BasePage
+from pages.base_page import BasePage
 import time
 
 

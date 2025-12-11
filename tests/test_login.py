@@ -7,8 +7,8 @@ del sistema de login, incluyendo camino feliz y pruebas negativas.
 """
 
 import pytest
-from tests.pages.login_page import LoginPage
-from tests.pages.crud_page import CRUDPage
+from pages.login_page import LoginPage
+from pages.crud_page import CRUDPage
 import time
 
 

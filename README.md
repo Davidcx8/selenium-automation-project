@@ -1,8 +1,7 @@
-# 🚀 Proyecto de Automatización con Selenium
+# 🚀 Sistema de Gestión de Registros con Pruebas Automatizadas
 
-**Tarea 4: Pruebas Automatizadas con Selenium**  
+**Proyecto Final - Programación III**  
 **Instituto Tecnológico de Las Américas (ITLA)**  
-**Programación 3**  
 **Estudiante**: Jose David Castillo  
 **Matrícula**: 20241546
 
@@ -12,7 +11,16 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto implementa un sistema completo de pruebas automatizadas usando **Selenium WebDriver** con Python para una aplicación web CRUD (Crear, Leer, Actualizar, Eliminar). El sistema incluye autenticación de usuarios y gestión de registros.
+> [!NOTE]
+> **Este proyecto es el entregable final para Programación III (ITLA)**
+>
+> Sistema completo de gestión de registros (CRUD) con autenticación y suite de pruebas automatizadas desarrollado siguiendo metodología Scrum. Incluye documentación formal completa, tablero Jira con 10 historias de usuario, y 26 casos de prueba automatizados.
+>
+> 📄 **Documentación Formal**: Ver carpeta `/docs` para documento PDF completo  
+> 📊 **Jira**: [Ver Tablero](https://josedavid.atlassian.net/jira/software/projects/SAT/boards/2/backlog)  
+> 🎥 **Video Demostrativo**: [Próximamente]
+
+Este proyecto implementa un sistema completo de pruebas automatizadas usando **Selenium WebDriver** con Python para una aplicación web CRUD (Crear, Leer, Actualizar, Eliminar). El sistema incluye autenticación de usuarios y gestión de registros, desarrollado siguiendo la metodología ágil **Scrum**.
 
 ### Características Principales
 
@@ -28,7 +36,7 @@ Este proyecto implementa un sistema completo de pruebas automatizadas usando **S
 ## 🏗️ Estructura del Proyecto
 
 ```
-Automatizacion_web/
+selenium-automation-project/
 ├── app/                                    # Aplicación web base
 │   ├── index.html                         # Página principal CRUD
 │   ├── login.html                         # Página de autenticación
@@ -37,6 +45,17 @@ Automatizacion_web/
 │   └── js/
 │       ├── app.js                         # Lógica del CRUD
 │       └── login.js                       # Lógica de autenticación
+│
+├── docs/                                   # 📄 Documentación del Proyecto Final
+│   ├── Proyecto_Final_Documentacion.md    # Portada e índice
+│   ├── seccion_1_planificacion.md         # Estrategia de trabajo
+│   ├── seccion_2_scrum.md                 # Metodología Scrum
+│   ├── seccion_3_plan_pruebas.md          # Plan de pruebas
+│   ├── seccion_4_conclusiones_bibliografia.md
+│   ├── historias_usuario.md               # 10 Historias de Usuario detalladas
+│   ├── COMO_GENERAR_PDF.md                # Guía para crear PDF
+│   ├── templates/                         # Plantillas de Scrum
+│   └── imagenes/                          # Capturas y diagramas
 │
 ├── tests/                                  # Pruebas automatizadas
 │   ├── __init__.py
@@ -258,9 +277,35 @@ Los reportes incluyen:
 
 ---
 
-## 📚 Documentación Adicional
+## 📚 Documentación del Proyecto Final
 
-Este README contiene toda la información necesaria para ejecutar y entender el proyecto. Las historias de usuario están documentadas en Jira.
+### Documento Formal (PDF)
+
+Toda la documentación formal del proyecto está en la carpeta `/docs` con las siguiente secciones:
+
+1. **Portada e Índice**: Información general del proyecto
+2. **Estrategia de Trabajo**: Planificación, tecnologías, objetivos, alcance, cronograma, primer release
+3. **Metodología Scrum**: Equipo, herramientas, épicas, ceremonias, 10 historias de usuario
+4. **Plan de Pruebas**: Requerimientos, criterios, herramientas, cronograma, automatización
+5 **Conclusiones y Bibliografía**: Logros, aprendizajes, mejoras futuras, referencias
+
+**📄 Para generar el PDF final**, consulta: `docs/COMO_GENERAR_PDF.md`
+
+### Historias de Usuario
+
+Las 10 historias de usuario están documentadas en:
+- **Detalle completo**: `docs/historias_usuario.md`
+- **Tablero Jira**: https://josedavid.atlassian.net/jira/software/projects/SAT/boards/2/backlog
+
+### Templates
+
+Plantillas estándar disponibles en `docs/templates/`:
+- `plantilla_historia_usuario.md` - Formato para historias de usuario
+- `plantilla_caso_prueba.md` - Formato para casos de prueba
+
+### README Técnico
+
+Este README se enfoca en la información técnica para ejecutar y desarrollar el proyecto.
 
 ---
 
@@ -353,4 +398,4 @@ Este proyecto es para fines académicos - ITLA 2024
 
 ---
 
-**Última actualización**: Diciembre 2025
+**Última actualización**: Diciembre 2024
