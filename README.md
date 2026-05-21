@@ -1,10 +1,5 @@
 # 🚀 Sistema de Gestión de Registros con Pruebas Automatizadas
 
-**Proyecto Final - Programación III**  
-**Instituto Tecnológico de Las Américas (ITLA)**  
-**Estudiante**: Jose David Castillo  
-**Matrícula**: 20241546
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.15-green.svg)](https://www.selenium.dev/)
 [![pytest](https://img.shields.io/badge/pytest-7.4-orange.svg)](https://pytest.org/)
@@ -12,13 +7,13 @@
 ## 📋 Descripción del Proyecto
 
 > [!NOTE]
-> **Este proyecto es el entregable final para Programación III (ITLA)**
+> **Este proyecto es de practicas**
 >
 > Sistema completo de gestión de registros (CRUD) con autenticación y suite de pruebas automatizadas desarrollado siguiendo metodología Scrum. Incluye documentación formal completa, tablero Jira con 10 historias de usuario, y 26 casos de prueba automatizados.
 >
 > 📄 **Documentación Formal**: Ver carpeta `/docs` para documento PDF completo  
 > 📊 **Jira**: [Ver Tablero](https://josedavid.atlassian.net/jira/software/projects/SAT/boards/2/backlog)  
-> 🎥 **Video Demostrativo**: [Próximamente]
+> 🎥 **Video Demostrativo**:
 
 Este proyecto implementa un sistema completo de pruebas automatizadas usando **Selenium WebDriver** con Python para una aplicación web CRUD (Crear, Leer, Actualizar, Eliminar). El sistema incluye autenticación de usuarios y gestión de registros, desarrollado siguiendo la metodología ágil **Scrum**.
 
@@ -322,9 +317,7 @@ Este README se enfoca en la información técnica para ejecutar y desarrollar el
 
 ### Permisos Otorgados
 
-✅ ktejada@itla.edu.do  
-✅ 20186927@itla.edu.do
-
+✅ Libre Uso Practico
 ---
 
 ## 📝 Notas Importantes
@@ -378,24 +371,20 @@ Asegúrate de que las rutas en `conftest.py` apuntan correctamente a la carpeta 
 ## 👨‍💻 Autor
 
 **Jose David Castillo**  
-**Matrícula**: 20241546  
-**Curso**: Programación 3  
-**Instituto**: ITLA
+**Desarrollador Software**
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto es para fines académicos - ITLA 2024
+Este proyecto es para fines prácticos
 
 ---
 
 ## ⭐ Agradecimientos
 
-- Profesor: ktejada@itla.edu.do
-- Monitor: 20186927@itla.edu.do
 - ITLA - Instituto Tecnológico de Las Américas
 
 ---
 
-**Última actualización**: Diciembre 2024
+**Última actualización**: Diciembre 2025
